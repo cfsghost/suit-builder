@@ -3,3 +3,8 @@ body {
 	background: #eee;
 	height: 100%;
 }
+
+.ui-sortable-placeholder {
+	background: #aabbcc;
+	border: 1px solid #bbccdd;
+}
