@@ -27,6 +27,9 @@ $(function() {
 
 			return $e;
 		},
+		start: function(event, ui) {
+//			ui.item = ui.helper;
+		},
 		revert: 'invalid'
 	});
 
@@ -47,16 +50,29 @@ $(function() {
 		.sortable({
 			placeholder: 'ui-sortable-placeholder',
 			update: function(event, ui) {
-//				$(ui.item).remove();
-				console.log(1111);
+				$(ui.item).remove();
+			},
+			sort: function(event, ui) {
+				console.log('sort');
 			},
 			over: function(event, ui) {
-				$(ui.item).replaceWith($(ui.helper));
-			//	ui.item = ui.helper;
-				console.log(222);
+				console.log('over');
+
+				console.log(ui.placeholder);
+				var $ph = $(ui.placeholder);
+
+				var $item = $(ui.helper).clone(false);
+				$item.css({ visibility: 'hidden' });
+
+				//$ph.replaceWith($item);
+				$ph.html($item.clone(false).wrap('<p>').parent().html());
+				$ph.css({
+					height: $item.outerHeight()
+				});
+				console.log(ui.placeholder);
 			},
 			receive: function(event, ui) {
-				var $item = $(ui.helper).clone(false);
+				var $item = $(ui.helper).clone(true);
 
 				$item
 					.removeClass('ui-draggable-dragging')
