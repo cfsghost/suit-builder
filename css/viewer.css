@@ -2,3 +2,11 @@
 	background: #bbb;
 	height: 100%;
 }
+
+.viewer .nav, .viewer .navbar {
+	margin-bottom: 0px;
+}
+
+.viewer .tab-content {
+	min-height: 100px;
+}

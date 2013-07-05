@@ -8,3 +8,24 @@ body {
 	background: #aabbcc;
 	border: 1px solid #bbccdd;
 }
+
+.toolbox {
+	background: #333333;
+}
+
+.toolbox .accordion-group {
+	border: 0px;
+}
+
+.toolbox .accordion-inner {
+	padding: 0px;
+	border: 0px;
+}
+
+.toolbox .button {
+	padding: 5px;
+}
+
+.toolbox .button:hover {
+	background: #555555;
+}

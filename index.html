@@ -24,26 +24,27 @@
 			</div>
 		</div>
 
-		<div class="container-fluid">
-			<div class="row-fluid">
+		<div class="affix toolbox" style="height: 100%; width: 200px;">
+			<div class="accordion" id="components_accordion">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a href="#components" class="accordion-toggle" data-toggle="collapse" data-parent="#conponents_accordion">Components</a>
+					</div>
 
-				<div class="accordion span2" id="components_accordion">
-					<div class="accordion-group">
-						<div class="accordion-heading">
-							<a href="#components" class="accordion-toggle" data-toggle="collapse" data-parent="#conponents_accordion">Components</a>
-						</div>
-
-						<div id="components" class="accordion-body collapse in">
-							<div class="accordion-inner">
-	
-								<div id="widget_navbar">Navbar</div>
-							</div>
+					<div id="components" class="accordion-body collapse in">
+						<div class="accordion-inner">
+							<div id="widget_navbar" class="button"><a href="#">Navbar</a></div>
+							<div id="widget_navtab" class="button"><a href="#">Tab</a></div>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
 
-				<div id="viewer" class="span9 viewer" style="height: 800px;">
-				</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+
+				<div id="viewer" class="offset2 span9 viewer" style="height: 800px;"></div>
 			</div>
 		</div>
 	</body>
