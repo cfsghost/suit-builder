@@ -29,3 +29,7 @@ body {
 .toolbox .button:hover {
 	background: #555555;
 }
+
+.toolbox .button a {
+	color: #f5f5f5;
+}

@@ -35,6 +35,16 @@ var Tab = function() {
 	self.$content.append(self.$pane1).append(self.$pane2);
 
 	self.$e.append(self.$nav).append(self.$content);
+
+	// Schema of property
+	self.schema = {
+		id: 'String'
+	};
+
+	// Properties
+	self.props = {
+		id: 'navbar'
+	};
 };
 
 Widget.register('Navigator', 'Tab', Tab);

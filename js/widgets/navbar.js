@@ -27,6 +27,16 @@ var Navbar = function() {
 		.append(self.$defItem);
 
 	self.$defItem.append(self.$defLabel);
+
+	// Schema of property
+	self.schema = {
+		id: 'String'
+	};
+
+	// Properties
+	self.props = {
+		id: 'navbar'
+	};
 };
 
 Widget.register('Navigator', 'Navbar', Navbar);

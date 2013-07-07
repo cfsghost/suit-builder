@@ -2,7 +2,11 @@
 
 $(function() {
 
-	var widget = new Widget();
+	var suitBuilder = {};
+
+	// Property Tool
+	var propTool = suitBuilder.propTool = new PropertyTool(suitBuilder);
+	var widget = suitBuilder.widget = new Widget(suitBuilder);
 
 	// Navbar
 	$('#widget_navbar').draggable({
