@@ -25,7 +25,7 @@ Widget.prototype.createWidget = function(widgetName) {
 	if (!WidgetClass)
 		return null;
 
-	var instance = new WidgetClass();
+	var instance = new WidgetClass(self);
 	var wrapper = new WidgetWrapper(self, instance);
 
 	instance.props.id = widgetName + self.serial;

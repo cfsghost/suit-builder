@@ -34,6 +34,19 @@ $(function() {
 		revert: 'invalid'
 	});
 
+	// Navbar Brand
+	$('#widget_navbar_brand').draggable({
+		appendTo: 'body',
+		connectToSortable: '.navbar-inner .container-fluid',
+		helper: function(event) {
+
+			var navbarBrand = widget.createWidget('NavbarBrand');
+
+			return navbarBrand.$e;
+		},
+		revert: 'invalid'
+	});
+
 	var externalObj = null;
 	$('#viewer')
 		.sortable({

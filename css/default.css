@@ -9,6 +9,14 @@ body {
 	border: 1px solid #bbccdd;
 }
 
+.ui-sortable-placeholder-horizontal {
+	float: left;
+	background: #aabbcc;
+	border-left: 1px solid #bbccdd;
+	border-right: 1px solid #bbccdd;
+	padding: 0px;
+}
+
 .toolbox {
 	background: #333333;
 }
